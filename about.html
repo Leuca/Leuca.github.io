@@ -1,81 +1,25 @@
-<!DOCTYPE html>
-
-<html lang="en">
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link href="styles.css" rel="stylesheet">
-
-        <script src="dark-mode.js"></script>
-        <script>
-            // After DOM is loaded make sure dark mode is respected
-            document.addEventListener('DOMContentLoaded', detectDarkMode);
-        </script>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>About - LM</title>
-
-        <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    </head>
-    <body class="col-lg-8 mx-auto">
-        <!--Navbar-->
-        <header class="border-bottom">
-            <nav class="navbar navbar-expand-md">
-                <div class="container-fluid d-md-flex justify-content-between">
-                    <div class="invisible">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <div>
-                        <a class="navbar-brand p-0 m-0 text-center" href="#">LM</a>
-                    </div>
-                    <!--Navbar toggler-->
-                    <div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
-                        <div class="navbar-nav">
-                            <a class="nav-link" href="/index.html">Home</a>
-                            <hr class="m-0">
-                            <a class="nav-link active" aria-current="page" href="/about.html">About</a>
-                            <hr class="m-0">
-                            <a class="nav-link" href="/contacts.html">Contacts</a>
-                            <hr class="m-0">
-                            <a class="nav-link" href="/iaq.html">IAQ</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main>
-            <div class="container-fluid mt-3 py-5">
-                <h4><strong>About me</strong></h4>
-                <br>
-                    In my twenties from Milan, Italy.
-                <br>
-                    I love electronics, computers, software, cars and, more in general, science.
-                <br>
-                    In my free time I like to work out, code and meditate.
-                <br>
-                    I'm currently studying Electrical Engineering at Politecnico di Milano.
-                <br>
-                <br>
-                    After I found out about <a href="https://edx.org" class="link-secondary">edX</a> free courses of Computer Science I decided to take CS50x to improve my coding skills and as a matter of fact this very website is actually my solution of a problem from week 8.
-                </p>
-                <br>
-                <h4><strong>My work</strong></h4>
-                <br>
-                <p>You can find out more about my projects on my <a href="https://github.com/Leuca" class="link-secondary">GitHub</a> and <a href="https://gitlab.com/Leuca" class="link-secondary">GitLab</a></p>
-            </div>
-        </main>
-
-        <footer class="container-fluid p-0 py-5 border-top">
-            <p class="mb-0">&#169; 2022 Luca Magrone</p>
-        </footer>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    </body>
-</html>
+---
+layout: default
+title: About - LM
+script:  "<script>\n
+            // After DOM is loaded make sure dark mode is respected\n
+            document.addEventListener('DOMContentLoaded', detectDarkMode);\n
+        </script>"
+---
+<h4><strong>About me</strong></h4>
+            <br>
+                In my twenties from Milan, Italy.
+            <br>
+                I love electronics, computers, software, cars and, more in general, science.
+            <br>
+                In my free time I like to work out, code and meditate.
+            <br>
+                I'm currently studying Electrical Engineering at Politecnico di Milano.
+            <br>
+            <br>
+                After I found out about <a href="https://edx.org" class="link-secondary">edX</a> free courses of Computer Science I decided to take CS50x to improve my coding skills and as a matter of fact this very website is actually my solution of a problem from week 8.
+            </p>
+            <br>
+            <h4><strong>My work</strong></h4>
+            <br>
+            <p>You can find out more about my projects on my <a href="https://github.com/Leuca" class="link-secondary">GitHub</a> and <a href="https://gitlab.com/Leuca" class="link-secondary">GitLab</a></p>
