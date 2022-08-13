@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Change every second
     window.setInterval(function() {
-        if (parseFloat(being.style.opacity) == 0.0 || parseFloat(being.style.opacity) == 1.0)
+        if (parseFloat(being.style.opacity) <= 0.0 || parseFloat(being.style.opacity) == 1.0)
         {
             change *= (-1);
 
