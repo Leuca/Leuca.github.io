@@ -37,15 +37,10 @@
                         <div class="navbar-nav">
                             {% for item in site.data.pages %}
                             <a class="nav-link {% if item.url == page.url %}active{% endif %}" {% if item.url == page.url %}aria-current="page"{% endif %} href="{{ item.url }}">{{ item.name }}</a>
+                            {% if item.name != "IAQ" %}
+                                <hr class="m-0">
+                            {% endif %}
                             {% endfor %}
-                            <!--
-                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-                            <hr class="m-0">
-                            <a class="nav-link" href="/about.html">About</a>
-                            <hr class="m-0">
-                            <a class="nav-link" href="/contacts.html">Contacts</a>
-                            <hr class="m-0">
-                            <a class="nav-link" href="/iaq.html">IAQ</a>-->
                         </div>
                     </div>
                 </div>
