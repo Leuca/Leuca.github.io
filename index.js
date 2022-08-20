@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let button = document.querySelector('#aboutme');
     button.addEventListener('click', function() {
         // Go to about page
-        window.location.href = '/about.html';
+        window.location.href = '/about';
     });
 
     detectDarkMode();

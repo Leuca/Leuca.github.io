@@ -2,10 +2,7 @@
   url: /
 
 - name: About
-  url: /about.html
+  url: /about
 
 - name: Contacts
-  url: /contacts.html
-
-- name: IAQ
-  url: /iaq.html
+  url: /contacts
