@@ -31,6 +31,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
         being.style.opacity = String(parseFloat(being.style.opacity) + change);
     }, timeout);
-
-    detectDarkMode();
 });

@@ -126,3 +126,40 @@ footer {
 .accordion-button:not(.collapsed)::after {
     background-image: var(--bs-accordion-btn-icon);
 }
+
+/* Support for system theme */
+@media (prefers-color-scheme: dark) {
+	html,body {
+		background-color: var(--bs-dark);
+	}
+
+	main {
+		color: var(--bs-light);
+	}
+
+	li {
+		img {
+			filter: invert();
+		}
+	}
+
+	img.navbar-brand {
+		filter: invert();
+	}
+
+	div.navbar-nav {
+		filter: invert();
+	}
+
+	.btn {
+		filter: invert();
+	}
+
+	.selmode {
+		color: var(--bs-light);
+	}
+
+	button.navbar-toggler {
+		filter: invert();
+	}
+}
