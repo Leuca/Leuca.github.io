@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="34"
+   height="35"
+   viewBox="0 0 34 35"
+   fill="none"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="simplex-logo.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="24.228571"
+     inkscape:cx="16.98408"
+     inkscape:cy="17.5"
+     inkscape:window-width="1918"
+     inkscape:window-height="1057"
+     inkscape:window-x="0"
+     inkscape:window-y="21"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M3.02958 8.60922L8.622 14.2013L14.3705 8.45375L17.1669 11.2498L11.4183 16.9972L17.0114 22.5895L14.1373 25.4633L8.54422 19.871L2.79636 25.6187L0 22.8227L5.74794 17.075L0.155484 11.483L3.02958 8.60922Z"
+     fill="white"
+     id="path1" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M14.0923 25.5156L16.944 22.6642L16.9429 22.6634L22.6467 16.9612L17.0513 11.3675L17.0523 11.367L14.2548 8.56979L8.65972 2.97535L11.5114 0.123963L17.1061 5.71849L22.8099 0.015625L25.6074 2.81285L19.9035 8.51562L25.4984 14.1099L31.2025 8.40729L34 11.2045L28.2958 16.907L33.8917 22.5017L31.0399 25.3531L25.4442 19.7584L19.7409 25.4611L25.3365 31.0559L22.4848 33.9073L16.8892 28.3124L11.1864 34.0156L8.38885 31.2184L14.0923 25.5156Z"
+     fill="url(#paint0_linear_656_10815)"
+     id="path2"
+     style="filter:url(#filter3)" />
+  <defs
+     id="defs3">
+    <linearGradient
+       id="paint0_linear_656_10815"
+       x1="12.8381"
+       y1="-0.678252"
+       x2="9.54355"
+       y2="31.4493"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#01F1FF"
+         id="stop2" />
+      <stop
+         offset="1"
+         stop-color="#0197FF"
+         id="stop3" />
+    </linearGradient>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Greyscale"
+       id="filter3"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0 0 0 1 0 "
+         id="feColorMatrix3" />
+    </filter>
+  </defs>
+</svg>
