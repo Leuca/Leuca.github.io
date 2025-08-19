@@ -32,12 +32,5 @@ document.addEventListener('DOMContentLoaded', function() {
         being.style.opacity = String(parseFloat(being.style.opacity) + change);
     }, timeout);
 
-    // Make the button do something
-    let button = document.querySelector('#aboutme');
-    button.addEventListener('click', function() {
-        // Go to about page
-        window.location.href = '/about';
-    });
-
     detectDarkMode();
 });
