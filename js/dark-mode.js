@@ -37,6 +37,14 @@ function detectDarkMode() {
         {
             vimicon.style.filter = 'grayscale(100%)';
         }
+
+		// Switch to dark icons
+		let icons = document.querySelectorAll('img');
+		for (var i = 0; i < icons.length; i++) {
+			lightsrc = icons[i].src;
+			darksrc = lightsrc.replace("light", "dark");
+			icons[i].src = darksrc;
+		}
     }
 
 }
