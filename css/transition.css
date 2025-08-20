@@ -1,0 +1,111 @@
+:root {
+	--transition-time: 10s;
+}
+
+#transition {
+	height: 100%;
+	position: relative;
+}
+
+.mainh1 {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
+.maina {
+	z-index: 0;
+	animation: showa var(--transition-time) linear infinite;
+}
+
+.mainb {
+	z-index: 0;
+	animation: showb var(--transition-time) linear infinite;
+}
+
+.mainc {
+	z-index: 0;
+	animation: showc var(--transition-time) linear infinite;
+}
+
+.maind {
+	z-index: 0;
+	animation: showd var(--transition-time) linear infinite;
+}
+
+.maine {
+	z-index: 0;
+	animation: showe var(--transition-time) linear infinite;
+}
+
+@keyframes showa {
+	0% {opacity: 0%;}
+	10% {opacity: 100%;}
+	20% {opacity: 0%;}
+	30% {opacity: 0%;}
+	40% {opacity: 0%;}
+	50% {opacity: 0%;}
+	60% {opacity: 0%;}
+	70% {opacity: 0%;}
+	80% {opacity: 0%;}
+	90% {opacity: 0%;}
+	100% {opacity: 0%;}
+}
+
+@keyframes showb {
+	0% {opacity: 0%;}
+	10% {opacity: 0%;}
+	20% {opacity: 0%;}
+	30% {opacity: 100%;}
+	40% {opacity: 0%;}
+	50% {opacity: 0%;}
+	60% {opacity: 0%;}
+	70% {opacity: 0%;}
+	80% {opacity: 0%;}
+	90% {opacity: 0%;}
+	100% {opacity: 0%;}
+}
+
+@keyframes showc {
+	0% {opacity: 0%;}
+	10% {opacity: 0%;}
+	20% {opacity: 0%;}
+	30% {opacity: 0%;}
+	40% {opacity: 0%;}
+	50% {opacity: 100%;}
+	60% {opacity: 0%;}
+	70% {opacity: 0%;}
+	80% {opacity: 0%;}
+	90% {opacity: 0%;}
+	100% {opacity: 0%;}
+}
+
+@keyframes showd {
+	0% {opacity: 0%;}
+	10% {opacity: 0%;}
+	20% {opacity: 0%;}
+	30% {opacity: 0%;}
+	40% {opacity: 0%;}
+	50% {opacity: 0%;}
+	60% {opacity: 0%;}
+	70% {opacity: 100%;}
+	80% {opacity: 0%;}
+	90% {opacity: 0%;}
+	100% {opacity: 0%;}
+}
+
+@keyframes showe {
+	0% {opacity: 0%;}
+	10% {opacity: 0%;}
+	20% {opacity: 0%;}
+	30% {opacity: 0%;}
+	40% {opacity: 0%;}
+	50% {opacity: 0%;}
+	60% {opacity: 0%;}
+	70% {opacity: 0%;}
+	80% {opacity: 0%;}
+	90% {opacity: 100%;}
+	100% {opacity: 0%;}
+}
