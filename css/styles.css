@@ -162,4 +162,8 @@ footer {
 	button.navbar-toggler {
 		filter: invert();
 	}
+
+	.bar {
+		filter: invert();
+	}
 }
