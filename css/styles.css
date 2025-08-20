@@ -167,3 +167,7 @@ footer {
 		filter: invert();
 	}
 }
+
+.selmode {
+	word-wrap: break-word;
+}
