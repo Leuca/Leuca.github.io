@@ -16,9 +16,7 @@
                                 <div class="navbar-nav">
                                     {% for item in site.data.pages %}
                                     <a class="nav-link {% if item.url == page.url %}active{% endif %}" {% if item.url == page.url %}aria-current="page"{% endif %} href="{{ item.url }}">{{ item.name }}</a>
-                                    {% if item.name != "IAQ" %}
                                         <hr class="m-0">
-                                    {% endif %}
                                     {% endfor %}
                                 </div>
                         </div>
@@ -28,9 +26,7 @@
                         <div class="navbar-nav">
                             {% for item in site.data.pages %}
                             <a class="nav-link {% if item.url == page.url %}active{% endif %}" {% if item.url == page.url %}aria-current="page"{% endif %} href="{{ item.url }}">{{ item.name }}</a>
-                            {% if item.name != "IAQ" %}
                                 <hr class="m-0">
-                            {% endif %}
                             {% endfor %}
                         </div>
                     </div>
