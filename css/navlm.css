@@ -6,9 +6,11 @@
 .mtoggle {
   position: relative;
   z-index: 10;
+  height: 0px;
   top: 10px;
   left: -10px;
-  display: none;
+  transition: height 0.4s ease-in;
+  overflow: hidden;
 }
 
 input[type="checkbox"] {
@@ -16,7 +18,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked ~ .mtoggle {
-  display: block;
+  height: 130px;
 }
 
 input[type="checkbox"]:checked ~ label .top {
