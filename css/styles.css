@@ -171,3 +171,19 @@ footer {
 .selmode {
 	word-wrap: break-word;
 }
+
+/* Markdown links in posts carry no class: give them link-secondary's colours */
+.post {
+    --bs-link-color-rgb: var(--bs-secondary-rgb);
+    --bs-link-hover-color-rgb: 86, 94, 100;
+}
+.post .figure-caption {
+    color: inherit;
+    opacity: .75;
+}
+/* Section headings stay below the h4 post title */
+.post h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}

@@ -1,2 +1,20 @@
 domain: luca.magrone.cc
 url: https://luca.magrone.cc
+title: Luca Magrone
+description: Freedom and open source projects.
+
+permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+      nav: /blog/
+
+plugins:
+  - jekyll-feed
+kramdown:
+  smart_quotes: apos,apos,quot,quot
+  # Keep ASCII: no typographic dashes or ellipses
+  typographic_symbols: {hellip: "...", mdash: "---", ndash: "--", laquo: "<<", raquo: ">>", laquo_space: "<< ", raquo_space: " >>"}

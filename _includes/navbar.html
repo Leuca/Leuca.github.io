@@ -1,3 +1,4 @@
+{% assign current = page.nav | default: page.url %}
 <header class="border-bottom">
             <nav class="navbar navbar-expand-md">
                 <div class="container-fluid d-md-flex justify-content-between">
@@ -15,7 +16,7 @@
                         <div class="d-md-flex mtoggle" id="navbarMenuAlt">
                                 <div class="navbar-nav">
                                     {% for item in site.data.pages %}
-                                    <a class="nav-link {% if item.url == page.url %}active{% endif %}" {% if item.url == page.url %}aria-current="page"{% endif %} href="{{ item.url }}">{{ item.name }}</a>
+                                    <a class="nav-link {% if item.url == current %}active{% endif %}" {% if item.url == current %}aria-current="page"{% endif %} href="{{ item.url }}">{{ item.name }}</a>
                                         <hr class="m-0">
                                     {% endfor %}
                                 </div>
@@ -25,7 +26,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
                         <div class="navbar-nav">
                             {% for item in site.data.pages %}
-                            <a class="nav-link {% if item.url == page.url %}active{% endif %}" {% if item.url == page.url %}aria-current="page"{% endif %} href="{{ item.url }}">{{ item.name }}</a>
+                            <a class="nav-link {% if item.url == current %}active{% endif %}" {% if item.url == current %}aria-current="page"{% endif %} href="{{ item.url }}">{{ item.name }}</a>
                                 <hr class="m-0">
                             {% endfor %}
                         </div>

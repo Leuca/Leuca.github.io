@@ -1,0 +1,21 @@
+---
+layout: default
+title: Blog - LM
+permalink: /blog/
+nav: /blog/
+---
+<h4><strong>Blog</strong></h4>
+<br>
+<ul class="list-unstyled">
+    {% for post in site.posts %}
+    <li class="mb-4">
+        <a href="{{ post.url }}" class="link-secondary"><strong>{{ post.title }}</strong></a>
+        <br>
+        <small>{{ post.date | date: "%B %-d, %Y" }} &middot; {{ post.content | strip_html | number_of_words | divided_by: 200 | plus: 1 }} min read</small>
+        <br>
+        {{ post.description | default: post.excerpt | strip_html | strip | truncate: 200 }}
+    </li>
+    {% else %}
+    <li>Nothing here yet.</li>
+    {% endfor %}
+</ul>

@@ -17,8 +17,9 @@ input[type="checkbox"] {
   display: none;
 }
 
+/* ponytail: ~43px per nav item, bump when _data/pages.yml grows */
 input[type="checkbox"]:checked ~ .mtoggle {
-  height: 130px;
+  height: 173px;
 }
 
 input[type="checkbox"]:checked ~ label .top {

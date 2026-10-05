@@ -1,0 +1,29 @@
+/*
+ *  giscus theme: GitHub's own colours, this site's typeface.
+ *  Loaded by giscus inside its iframe via data-theme.
+ *  ponytail: if the cross-origin font is ever blocked, comments fall back
+ *  to the system sans-serif and nothing else breaks.
+ */
+@import url("https://giscus.app/themes/preferred_color_scheme.css");
+
+@font-face {
+  font-family: 'Encode Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("https://luca.magrone.cc/font/EncodeSans-VariableFont_wdth,wght.ttf");
+}
+
+body,
+.gsc-comment-box-textarea {
+  font-family: 'Encode Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
