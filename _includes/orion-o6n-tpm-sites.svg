@@ -1,0 +1,24 @@
+<figure class="figure d-block mx-auto my-4" style="max-width: 480px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 220" width="100%" role="img" aria-labelledby="tpm-sites-cap" font-size="13" fill="currentColor">
+<style>.mono { font-family: var(--bs-font-monospace); font-size: 12px; }</style>
+<rect x="0" y="20" width="86" height="190" rx="4" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-width="1.5"/>
+<text x="43" y="110" text-anchor="middle" font-weight="bold">Sky1</text>
+<text x="43" y="128" text-anchor="middle" opacity="0.7">SoC</text>
+<rect x="286" y="20" width="144" height="60" rx="4" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-width="1.5"/>
+<text x="358" y="45" text-anchor="middle" font-weight="bold">U37, SLB9672</text>
+<text x="358" y="64" text-anchor="middle" opacity="0.7">soldered, 1.8 V</text>
+<path d="M86 50L286 50M281 46L286 50L281 54" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="96" y="43" class="mono">schematic SPI1</text>
+<text x="96" y="66" class="mono" opacity="0.7">ACPI \_SB.SPI0</text>
+<rect x="286" y="130" width="144" height="80" rx="4" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-width="1.5"/>
+<text x="358" y="158" text-anchor="middle" font-weight="bold">Header module</text>
+<text x="358" y="177" text-anchor="middle" opacity="0.7">LetsTrust, SLB9672</text>
+<path d="M86 150L286 150M281 146L286 150L281 154" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="96" y="143" class="mono">schematic SPI2</text>
+<text x="96" y="166" class="mono" opacity="0.7">ACPI \_SB.SPI1</text>
+<path d="M86 195L286 195M281 191L286 195L281 199" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="96" y="188" class="mono">GPIO 44 = pin 18 -> RST#</text>
+<text x="96" y="210" opacity="0.7" font-size="12">hogged high</text>
+</svg>
+<figcaption id="tpm-sites-cap" class="figure-caption text-center">The two TPM options selectable from the firmware configuration menu.</figcaption>
+</figure>

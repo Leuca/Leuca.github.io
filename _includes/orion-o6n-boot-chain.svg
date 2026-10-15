@@ -1,0 +1,30 @@
+<figure class="figure d-block mx-auto my-4" style="max-width: 480px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 310" width="100%" role="img" aria-labelledby="boot-chain-cap" font-size="13" fill="currentColor">
+<rect x="1" y="2" width="22" height="14" rx="2" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="29" y="14" font-size="12">runs unmeasured</text>
+<rect x="150" y="2" width="22" height="14" rx="2" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-width="1.5"/>
+<text x="178" y="14" font-size="12">measures into the TPM</text>
+<rect x="40" y="32" width="250" height="40" rx="4" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="165.0" y="57.0" text-anchor="middle" font-weight="bold">BootROM</text>
+<rect x="40" y="92" width="250" height="40" rx="4" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="165.0" y="117.0" text-anchor="middle" font-weight="bold">TF-A, OP-TEE, SE and PM firmware</text>
+<path d="M165.0 72L165.0 92M161.0 87L165.0 92L169.0 87" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<rect x="40" y="152" width="250" height="76" rx="4" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-width="1.5"/>
+<text x="165.0" y="177.0" text-anchor="middle" font-weight="bold">UEFI (bootloader3)</text>
+<text x="165.0" y="195.0" text-anchor="middle" opacity="0.75">measures its own version and</text>
+<text x="165.0" y="213.0" text-anchor="middle" opacity="0.75">volumes into PCR0</text>
+<path d="M165.0 132L165.0 152M161.0 147L165.0 152L169.0 147" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<rect x="40" y="248" width="250" height="56" rx="4" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-width="1.5"/>
+<text x="165.0" y="272.0" text-anchor="middle" font-weight="bold">Linux</text>
+<text x="165.0" y="290.0" text-anchor="middle" opacity="0.75">IMA extends PCR 10</text>
+<path d="M165.0 228L165.0 248M161.0 243L165.0 248L169.0 243" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<path d="M30 34H22V226H30" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="14" y="130" text-anchor="middle" transform="rotate(-90 14 130)" font-size="12">signature chain</text>
+<rect x="330" y="152" width="100" height="152" rx="4" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-width="1.5"/>
+<text x="380" y="222" text-anchor="middle" font-weight="bold">TPM</text>
+<text x="380" y="240" text-anchor="middle" opacity="0.7" font-size="12">U37 or header</text>
+<path d="M290 190L330 190M325 186L330 190L325 194" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<path d="M290 276L330 276M325 272L330 276L325 280" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+<figcaption id="boot-chain-cap" class="figure-caption text-center">What runs before Linux, what checks it and what gets measured.</figcaption>
+</figure>

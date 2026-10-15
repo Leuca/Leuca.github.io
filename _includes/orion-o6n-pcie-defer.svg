@@ -1,0 +1,33 @@
+<figure class="figure d-block mx-auto my-4" style="max-width: 480px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 326" width="100%" role="img" aria-labelledby="pcie-defer-cap" font-size="13" fill="currentColor">
+<style>.mono { font-family: var(--bs-font-monospace); font-size: 12px; }</style>
+<text x="0" y="16" font-weight="bold">Before: every error became -EINVAL</text>
+<text x="0" y="50" class="mono">sky1-pcie</text>
+<text x="0" y="90" class="mono">gpio-cadence</text>
+<path d="M192 46H312M100 86H212M292 86H430" stroke="currentColor" stroke-opacity=".25"/>
+<rect x="100" y="34" width="92" height="24" rx="4" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-width="1.5"/>
+<text x="146" y="51" text-anchor="middle">probe</text>
+<rect x="212" y="74" width="80" height="24" rx="4" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-width="1.5"/>
+<text x="252" y="91" text-anchor="middle">loads</text>
+<text x="202" y="40" class="mono" opacity="0.75">-517 -> -22</text>
+<rect x="312" y="34" width="118" height="24" rx="4" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="371" y="51" text-anchor="middle" opacity="0.75">never retried</text>
+<text x="0" y="126" opacity="0.85">The controller is dropped for good, so the boot waits forever</text>
+<text x="0" y="144" opacity="0.85">for a root disk that will never arrive.</text>
+<text x="0" y="188" font-weight="bold">After: the deferral passes through</text>
+<text x="0" y="222" class="mono">sky1-pcie</text>
+<text x="0" y="262" class="mono">gpio-cadence</text>
+<path d="M192 218H312M100 258H212M292 258H430" stroke="currentColor" stroke-opacity=".25"/>
+<rect x="100" y="206" width="92" height="24" rx="4" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-width="1.5"/>
+<text x="146" y="223" text-anchor="middle">probe</text>
+<rect x="212" y="246" width="80" height="24" rx="4" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-width="1.5"/>
+<text x="252" y="263" text-anchor="middle">loads</text>
+<text x="202" y="212" class="mono" opacity="0.75">-517, defer</text>
+<path d="M292 258H340V230M336 235L340 230L344 235" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<rect x="312" y="206" width="118" height="24" rx="4" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-width="1.5"/>
+<text x="371" y="223" text-anchor="middle">retry: OK</text>
+<text x="0" y="298" opacity="0.85">The driver core retries once the GPIO exists; the NVMe root</text>
+<text x="0" y="316" opacity="0.85">disk appears and the boot carries on.</text>
+</svg>
+<figcaption id="pcie-defer-cap" class="figure-caption text-center">The PCIe controller probes before the GPIO driver it needs has loaded.</figcaption>
+</figure>

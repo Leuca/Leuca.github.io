@@ -1,0 +1,81 @@
+<figure class="figure d-block mx-auto my-4" style="max-width: 480px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 350" width="100%" role="img" aria-labelledby="fifo-cap" font-size="13" fill="currentColor">
+<style>.hex { font-family: var(--bs-font-monospace); font-size: 14px; }</style>
+<text x="0" y="16" font-weight="bold">Stock spi-cadence: one byte per FIFO word</text>
+<text x="0" y="34" opacity=".7">Each 32-bit word is shifted out MSB first.</text>
+<text x="0" y="69" opacity=".7">FIFO</text>
+<text x="0" y="125" opacity=".7">wire</text>
+<rect x="70" y="48" width="44" height="32" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-opacity=".35"/>
+<text x="92.0" y="69" text-anchor="middle" class="hex" opacity="0.5">00</text>
+<rect x="70" y="104" width="44" height="32" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-opacity=".35"/>
+<text x="92.0" y="125" text-anchor="middle" class="hex" opacity="0.5">00</text>
+<path d="M92.0 84v14m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-opacity=".4"/>
+<rect x="114" y="48" width="44" height="32" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-opacity=".35"/>
+<text x="136.0" y="69" text-anchor="middle" class="hex" opacity="0.5">00</text>
+<rect x="114" y="104" width="44" height="32" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-opacity=".35"/>
+<text x="136.0" y="125" text-anchor="middle" class="hex" opacity="0.5">00</text>
+<path d="M136.0 84v14m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-opacity=".4"/>
+<rect x="158" y="48" width="44" height="32" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-opacity=".35"/>
+<text x="180.0" y="69" text-anchor="middle" class="hex" opacity="0.5">00</text>
+<rect x="158" y="104" width="44" height="32" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-opacity=".35"/>
+<text x="180.0" y="125" text-anchor="middle" class="hex" opacity="0.5">00</text>
+<path d="M180.0 84v14m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-opacity=".4"/>
+<rect x="202" y="48" width="44" height="32" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-opacity=".35"/>
+<text x="224.0" y="69" text-anchor="middle" class="hex" opacity="1">80</text>
+<rect x="202" y="104" width="44" height="32" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-opacity=".35"/>
+<text x="224.0" y="125" text-anchor="middle" class="hex" opacity="1">80</text>
+<path d="M224.0 84v14m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-opacity=".4"/>
+<rect x="246" y="48" width="44" height="32" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-opacity=".35"/>
+<text x="268.0" y="69" text-anchor="middle" class="hex" opacity="0.5">00</text>
+<rect x="246" y="104" width="44" height="32" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-opacity=".35"/>
+<text x="268.0" y="125" text-anchor="middle" class="hex" opacity="0.5">00</text>
+<path d="M268.0 84v14m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-opacity=".4"/>
+<rect x="290" y="48" width="44" height="32" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-opacity=".35"/>
+<text x="312.0" y="69" text-anchor="middle" class="hex" opacity="0.5">00</text>
+<rect x="290" y="104" width="44" height="32" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-opacity=".35"/>
+<text x="312.0" y="125" text-anchor="middle" class="hex" opacity="0.5">00</text>
+<path d="M312.0 84v14m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-opacity=".4"/>
+<rect x="334" y="48" width="44" height="32" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-opacity=".35"/>
+<text x="356.0" y="69" text-anchor="middle" class="hex" opacity="0.5">00</text>
+<rect x="334" y="104" width="44" height="32" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-opacity=".35"/>
+<text x="356.0" y="125" text-anchor="middle" class="hex" opacity="0.5">00</text>
+<path d="M356.0 84v14m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-opacity=".4"/>
+<rect x="378" y="48" width="44" height="32" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-opacity=".35"/>
+<text x="400.0" y="69" text-anchor="middle" class="hex" opacity="1">D4</text>
+<rect x="378" y="104" width="44" height="32" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-opacity=".35"/>
+<text x="400.0" y="125" text-anchor="middle" class="hex" opacity="1">D4</text>
+<path d="M400.0 84v14m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-opacity=".4"/>
+<rect x="70" y="48" width="176" height="32" fill="none" stroke="currentColor" stroke-width="2"/>
+<rect x="246" y="48" width="176" height="32" fill="none" stroke="currentColor" stroke-width="2"/>
+<rect x="70" y="104" width="176" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="0" y="158">The TPM reads 00 00 00 80 as its header: not a valid one.</text>
+<text x="0" y="200" font-weight="bold">Fixed: four bytes packed per word</text>
+<text x="0" y="218" opacity=".7">Same FIFO, same shift order.</text>
+<text x="0" y="253" opacity=".7">FIFO</text>
+<text x="0" y="309" opacity=".7">wire</text>
+<rect x="70" y="232" width="44" height="32" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-opacity=".35"/>
+<text x="92.0" y="253" text-anchor="middle" class="hex" opacity="1">80</text>
+<rect x="70" y="288" width="44" height="32" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-opacity=".35"/>
+<text x="92.0" y="309" text-anchor="middle" class="hex" opacity="1">80</text>
+<path d="M92.0 268v14m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-opacity=".4"/>
+<rect x="114" y="232" width="44" height="32" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-opacity=".35"/>
+<text x="136.0" y="253" text-anchor="middle" class="hex" opacity="1">D4</text>
+<rect x="114" y="288" width="44" height="32" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-opacity=".35"/>
+<text x="136.0" y="309" text-anchor="middle" class="hex" opacity="1">D4</text>
+<path d="M136.0 268v14m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-opacity=".4"/>
+<rect x="158" y="232" width="44" height="32" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-opacity=".35"/>
+<text x="180.0" y="253" text-anchor="middle" class="hex" opacity="0.5">00</text>
+<rect x="158" y="288" width="44" height="32" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-opacity=".35"/>
+<text x="180.0" y="309" text-anchor="middle" class="hex" opacity="0.5">00</text>
+<path d="M180.0 268v14m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-opacity=".4"/>
+<rect x="202" y="232" width="44" height="32" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-opacity=".35"/>
+<text x="224.0" y="253" text-anchor="middle" class="hex" opacity="0.5">00</text>
+<rect x="202" y="288" width="44" height="32" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-opacity=".35"/>
+<text x="224.0" y="309" text-anchor="middle" class="hex" opacity="0.5">00</text>
+<path d="M224.0 268v14m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-opacity=".4"/>
+<rect x="70" y="232" width="176" height="32" fill="none" stroke="currentColor" stroke-width="2"/>
+<rect x="70" y="288" width="176" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="0" y="342">The TPM reads 80 D4 00 00: a valid header.</text>
+</svg>
+<figcaption id="fifo-cap" class="figure-caption text-center">The first header bytes of a TPM read, through Sky1's 32-bit FIFO.</figcaption>
+</figure>
