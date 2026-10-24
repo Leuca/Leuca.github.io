@@ -1,19 +1,10 @@
 /* Mobile menu: checkbox-driven card, styled like the buttons */
 .mnav {
-  --mnav-fg: var(--bs-dark);
-  --mnav-bg: var(--bs-white);
+  --mnav-fg: var(--bs-body-color);
+  --mnav-bg: var(--bs-body-bg);
   --mnav-rule: var(--bs-border-color);
   --mnav-hover: var(--bs-tertiary-bg);
   --mnav-ease: cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-@media (prefers-color-scheme: dark) {
-  .mnav {
-    --mnav-fg: var(--bs-light);
-    --mnav-bg: var(--bs-dark);
-    --mnav-rule: var(--bs-gray-700);
-    --mnav-hover: var(--bs-gray-800);
-  }
 }
 
 /* Hidden but keyboard-focusable */
