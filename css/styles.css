@@ -87,14 +87,6 @@ a:hover {
     text-decoration: none;
 }
 
-.navbar-toggler {
-    border-style: none;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
 .nav-link:hover {
     text-decoration: none;
 }
@@ -157,14 +149,6 @@ footer {
 
 	.selmode {
 		color: var(--bs-light);
-	}
-
-	button.navbar-toggler {
-		filter: invert();
-	}
-
-	.bar {
-		filter: invert();
 	}
 }
 
