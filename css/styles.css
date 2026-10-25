@@ -70,6 +70,14 @@ body {
     font-family: 'Encode Sans', sans-serif;
 }
 
+/* Larger text on phones, same breakpoint as the mobile nav */
+@media (max-width: 767.98px) {
+    :root {
+        --bs-body-font-size: 1.125rem;
+        --bs-body-line-height: 1.6;
+    }
+}
+
 a {
     text-decoration: none;
 }
